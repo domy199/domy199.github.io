@@ -1,328 +1,326 @@
+/* index.css modificato */
+
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
 html {
-    overflow: hidden;
+  overflow: auto;
 }
+
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #358551;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #358551;
 }
 
+/* Topbar */
 .topbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100dvw;
-    height: 7.5dvh;
-    padding-bottom: 13px;
-
-    color: white;
-
-    svg {
-        position: absolute;
-        left: 20px;
-    }
-    .ticket-attivo {
-        font-family: "Nunito Sans", sans-serif;
-        font-weight: 800;
-        font-size: 1.5rem;
-        letter-spacing: 1px;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 7.5vh;
+  padding-bottom: 13px;
+  color: white;
+}
+.topbar svg {
+  position: absolute;
+  left: 20px;
+}
+.topbar .ticket-attivo {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 800;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
 }
 
+/* Scroller & Content */
 .scroller {
-    width: 88dvw;
-    height: 88dvh;
-    overflow: scroll;
-
-    .content {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 14px 20px;
-
-        border-radius: 10px;
-        background: white;
-
-        .ferrovie-logo {
-            width: 50px;
-            margin-bottom: 14px;
-            img {
-                width: 100%;
-            }
-        }
-        .ticket-name {
-            font-family: "Nunito Sans", sans-serif;
-            font-weight: 800;
-            font-size: 1.4rem;
-            color: #00567b;
-        }
-        .ticket-name-description {
-            font-family: sans-serif;
-            font-weight: normal;
-            font-size: 1.1rem;
-            color: #5e5e5e;
-
-            margin-top: 1px;
-            margin-bottom: 18px;
-        }
-
-        .ticket {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            /*height: 80px;*/
-            padding: 10px 20px;
-
-            border: 1px solid rgba(0, 0, 0, 0.15);
-            border-radius: 10px;
-            background-color: #f2f5f7;
-
-            .top {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                height: 58px;
-                width: 100%;
-
-                .logo-text {
-                    display: flex;
-                    align-items: center;
-                    width: 80%;
-                    img {
-                        width: 30px;
-                    }
-                    h1 {
-                        font-family: "Nunito Sans", sans-serif;
-                        font-weight: 800;
-                        font-size: 1.05rem;
-                        letter-spacing: 1px;
-                        margin-left: 16px;
-                        line-height: 1.2rem;
-                    }
-                }
-                svg {
-                    transform: rotate(90deg);
-                    -webkit-tap-highlight-color: transparent;
-                }
-                svg.close {
-                    transform: rotate(270deg);
-                }
-            }
-            .bottom {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                width: 100%;
-
-                .qrcode {
-                    width: 80%;
-                    margin: 55px 0;
-                    img {
-                        width: 100%;
-                    }
-                }
-                .zoom-qrcode {
-                    font-family: "Nunito Sans", sans-serif;
-                    font-weight: 800;
-                    font-size: 1.3rem;
-                    margin-top: -5px;
-                    margin-bottom: 10px;
-                    color: #00567b;
-                }
-                .time {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 100%;
-                    height: 45px;
-
-                    svg {
-                        margin-left: -10px;
-                    }
-                    .time-remaining {
-                        font-family: "Plus Jakarta Sans", sans-serif;
-                        font-size: 1.5rem;
-                        font-weight: 550;
-                        letter-spacing: -2px;
-                        color: #00567b;
-                        margin-right: 1px;
-                        margin-bottom: 2px;
-                        margin-left: -4px;
-                    }
-                    .progress-bar {
-                        width: 30%;
-                        height: 17px;
-                        border-radius: 20px;
-                        border: 1px solid #00567b;
-                        background: #dddddd;
-
-                        div {
-                            width: 75%;
-                            height: 100%;
-                            background-color: #00567b;
-                            border-radius: 20px;
-                            z-index: -5;
-                        }
-                    }
-                    .lock {
-                        width: 20px;
-                        img {
-                            width: 100%;
-                        }
-                        margin-bottom: -3px;
-                        margin-right: -1px;
-                    }
-                    .number {
-                        font-family: "Plus Jakarta Sans", sans-serif;
-                        font-size: 1.1rem;
-                        font-weight: 550;
-                        color: #00567b;
-                        margin-bottom: 2px;
-                        margin-right: -8px;
-                    }
-                }
-            }
-            .bottom.hidden {
-                display: none;
-            }
-        }
-        .ticket.close {
-            height: 80px;
-        }
-
-        .animation {
-            display: flex;
-            align-items: center;
-            width: 100%;
-            overflow: hidden;
-
-            .inner {
-                display: flex;
-                width: 100%;
-                flex-wrap: nowrap;
-                .img1 {
-                    width: 100%;
-                }
-                .img2 {
-                    width: 100%;
-                    transform: scale(-1, 1);
-                    margin-right: -1px;
-                }
-                .img3 {
-                    width: 100%;
-                }
-                .img4 {
-                    width: 100%;
-                    transform: scale(-1, 1);
-                    margin-right: -1px;
-                }
-                .img5 {
-                    width: 100%;
-                }
-                .img6 {
-                    width: 100%;
-                    transform: scale(-1, 1);
-                    margin-right: -1px;
-                }
-                .img7 {
-                    width: 100%;
-                }
-                animation: animation 8s linear infinite alternate;
-            }
-        }
-
-        .under-animation {
-            display: flex;
-            align-items: flex-start;
-            justify-content: center;
-            flex-direction: column;
-            width: 100%;
-            height: 85px;
-            border-radius: 12px;
-            background-color: #358551;
-            margin-top: 20px;
-
-            h1 {
-                font-family: Helvetica, sans-serif;
-                font-weight: 500;
-                font-size: 1.15rem;
-                color: white;
-                margin-left: 18px;
-            }
-        }
-        .emesso-il {
-            font-family: Helvetica, sans-serif;
-            font-weight: 500;
-            font-size: 1.15rem;
-            color: #333333;
-            margin-top: 8px;
-        }
-        .data-emesso-il {
-            font-family: "Nunito Sans", sans-serif;
-            font-weight: 800;
-            font-size: 1.05rem;
-        }
-        .costo {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 100%;
-            margin-top: 20px;
-
-            .costo-1 {
-                font-family: Helvetica, sans-serif;
-                font-weight: 500;
-                font-size: 1.45rem;
-                color: #333333;
-                margin-top: 8px;
-            }
-            .costo-2 {
-                font-family: "Nunito Sans", sans-serif;
-                font-weight: 800;
-                font-size: 1.45rem;
-            }
-        }
-
-        .barra {
-            width: 100%;
-            height: 1px;
-            border-radius: 4px;
-            background-color: lightgray;
-            margin-top: 5px;
-            margin-bottom: 18px;
-        }
-        .dettagli {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 100%;
-
-            h1 {
-                font-family: "Nunito Sans", sans-serif;
-                font-weight: 800;
-                font-size: 1.175rem;
-            }
-            h2 {
-                font-family: "Nunito Sans", sans-serif;
-                font-weight: 800;
-                font-size: 1.16rem;
-                color: #00567b;
-            }
-        }
-    }
+  width: 88vw;
+  height: 88vh;
+  overflow: scroll;
 }
-@keyframes animation {
-    100% {
-        transform: translateX(-500%);
-    }
+.scroller .content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 10px;
+  background: white;
 }
 
+/* Logo Ferrovie */
+.scroller .content .ferrovie-logo {
+  width: 50px;
+  margin-bottom: 14px;
+}
+.scroller .content .ferrovie-logo img {
+  width: 100%;
+}
+
+/* Titoli */
+.scroller .content .ticket-name {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 800;
+  font-size: 1.4rem;
+  color: #00567b;
+}
+.scroller .content .ticket-name-description {
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 1.1rem;
+  color: #5e5e5e;
+  margin-top: 1px;
+  margin-bottom: 18px;
+}
+
+/* Ticket box */
+.scroller .content .ticket {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  background-color: #f2f5f7;
+}
+.scroller .content .ticket.close {
+  height: 80px;
+}
+
+/*   – Top sezione */
+.scroller .content .ticket .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 58px;
+  width: 100%;
+}
+.scroller .content .ticket .logo-text {
+  display: flex;
+  align-items: center;
+  width: 80%;
+}
+.scroller .content .ticket .logo-text img {
+  width: 30px;
+}
+.scroller .content .ticket .logo-text h1 {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 800;
+  font-size: 1.05rem;
+  letter-spacing: 1px;
+  margin-left: 16px;
+  line-height: 1.2rem;
+}
+.scroller .content .ticket .top svg {
+  transform: rotate(90deg);
+  -webkit-tap-highlight-color: transparent;
+}
+.scroller .content .ticket .top svg.close {
+  transform: rotate(270deg);
+}
+
+/*   – Bottom sezione */
+.scroller .content .ticket .bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.scroller .content .ticket .bottom.hidden {
+  display: none;
+}
+
+/*     • QR code */
+.scroller .content .ticket .bottom .qrcode {
+  width: 80%;
+  margin: 55px 0;
+}
+.scroller .content .ticket .bottom .qrcode img {
+  width: 100%;
+}
+
+/*     • Label ingrandisci */
+.scroller .content .ticket .bottom .zoom-qrcode {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 800;
+  font-size: 1.3rem;
+  margin-top: -5px;
+  margin-bottom: 10px;
+  color: #00567b;
+}
+
+/*     • Timer, progress e lock */
+.scroller .content .ticket .bottom .time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 45px;
+}
+.scroller .content .ticket .bottom .time svg {
+  margin-left: -10px;
+}
+.scroller .content .ticket .bottom .time .time-remaining {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 550;
+  letter-spacing: -2px;
+  color: #00567b;
+  margin-right: 1px;
+  margin-bottom: 2px;
+  margin-left: -4px;
+}
+.scroller .content .ticket .bottom .time .progress-bar {
+  width: 30%;
+  height: 17px;
+  border-radius: 20px;
+  border: 1px solid #00567b;
+  background: #dddddd;
+}
+.scroller .content .ticket .bottom .time .progress-bar div {
+  width: 75%;
+  height: 100%;
+  background-color: #00567b;
+  border-radius: 20px;
+  z-index: -5;
+}
+.scroller .content .ticket .bottom .time .lock {
+  width: 20px;
+  margin-bottom: -3px;
+  margin-right: -1px;
+}
+.scroller .content .ticket .bottom .time .lock img {
+  width: 100%;
+}
+.scroller .content .ticket .bottom .time .number {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 550;
+  color: #00567b;
+  margin-bottom: 2px;
+  margin-right: -8px;
+}
+
+/* Animazione orizzontale */
+.scroller .content .animation {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+.scroller .content .animation .inner {
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  animation: animation 8s linear infinite alternate;
+}
+.scroller .content .animation .inner .img1,
+.scroller .content .animation .inner .img3,
+.scroller .content .animation .inner .img5,
+.scroller .content .animation .inner .img7 {
+  width: 100%;
+}
+.scroller .content .animation .inner .img2,
+.scroller .content .animation .inner .img4,
+.scroller .content .animation .inner .img6 {
+  width: 100%;
+  transform: scale(-1, 1);
+  margin-right: -1px;
+}
+
+/* Sezione “under-animation” */
+.scroller .content .under-animation {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 85px;
+  border-radius: 12px;
+  background-color: #358551;
+  margin-top: 20px;
+}
+.scroller .content .under-animation h1 {
+  font-family: Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 1.15rem;
+  color: white;
+  margin-left: 18px;
+}
+
+/* Data e costo */
+.scroller .content .emesso-il {
+  font-family: Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 1.15rem;
+  color: #333333;
+  margin-top: 8px;
+}
+.scroller .content .data-emesso-il {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 800;
+  font-size: 1.05rem;
+}
+.scroller .content .costo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+.scroller .content .costo .costo-1 {
+  font-family: Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 1.45rem;
+  color: #333333;
+  margin-top: 8px;
+}
+.scroller .content .costo .costo-2 {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 800;
+  font-size: 1.45rem;
+}
+
+/* Separatore e dettagli */
+.scroller .content .barra {
+  width: 100%;
+  height: 1px;
+  border-radius: 4px;
+  background-color: lightgray;
+  margin-top: 5px;
+  margin-bottom: 18px;
+}
+.scroller .content .dettagli {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.scroller .content .dettagli h1 {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 800;
+  font-size: 1.175rem;
+}
+.scroller .content .dettagli h2 {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 800;
+  font-size: 1.16rem;
+  color: #00567b;
+}
+
+/* Scrollbar nascosta */
 .scroller::-webkit-scrollbar {
-    display: none;
+  display: none;
+}
+
+/* Keyframes */
+@keyframes animation {
+  100% {
+    transform: translateX(-500%);
+  }
 }
