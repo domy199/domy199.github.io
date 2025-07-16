@@ -1,0 +1,17 @@
+{
+  "name": "Scam",
+  "short_name": "Scam",
+  "description": "Scam",
+  "start_url": "/",
+  "scope": "/index.html",
+  "display": "standalone",
+  "background_color": "#358551",
+  "theme_color": "#358551",
+  "icons": [
+    {
+      "src": "logo2.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
