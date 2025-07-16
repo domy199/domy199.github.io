@@ -1,0 +1,197 @@
+/* Reset base */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* Corpo e sfondo generale */
+body {
+  font-family: sans-serif;
+  background: #388454;
+}
+.container {
+  min-height: 100vh;
+  padding: 16px;
+}
+.page-title {
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  margin-top: 16px;
+}
+
+/* ScrollView equivalente */
+.scroll-container {
+  max-height: 950px;
+  overflow-y: auto;
+  margin-top: 16px;
+  padding: 0 16px;
+}
+
+/* Card bianca principale */
+.card {
+  position: relative;
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+/* Logo */
+.card-logo {
+  display: block;
+  width: 124px;
+  margin: -12px auto 0;
+}
+
+/* Titoli e testo */
+.card-title {
+  color: #06577b;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+.card-desc {
+  font-size: 17px;
+  margin-top: 128px;
+}
+
+/* Sezione interna grigia */
+.info-section {
+  position: relative;
+  background: #f0f0f0;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 186px;
+  height: 450px;
+}
+.info-section .qr {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250px;
+  height: 250px;
+  cursor: pointer;
+}
+.info-top {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  display: flex;
+  align-items: center;
+}
+.info-top .icon {
+  width: 28px;
+  height: 29px;
+  margin-right: 8px;
+}
+.info-text {
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+}
+.info-footer {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  display: flex;
+  align-items: center;
+}
+.info-footer .icon {
+  width: 26px;
+  height: 20px;
+  margin-right: 4px;
+}
+.info-number {
+  font-size: 16px;
+  font-weight: bold;
+  color: #06577b;
+  margin-right: 16px;
+}
+.enlarge-label {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  font-weight: bold;
+  color: #06577b;
+}
+
+/* Pattern triangoli */
+.pattern {
+  position: absolute;
+  top: 638px;
+  left: -160px;
+  width: calc(100% + 160px);
+  height: 60px;
+  background: url('images/flash_pass_pattern_triangle2.png') repeat-x;
+}
+
+/* Strisce bianche laterali */
+.side-strip {
+  position: absolute;
+  top: 600px;
+  width: 24px;
+  height: 128px;
+  background: #fff;
+}
+.side-strip.left  { left:   0; transform: translateX(-24px); }
+.side-strip.right { right:  0; transform: translateX(24px); }
+
+/* Footer interno */
+.footer-info {
+  margin-top: 716px;
+}
+.time-remaining {
+  display: inline-block;
+  background: #388454;
+  color: #fff;
+  font-size: 13px;
+  padding: 16px;
+  border-radius: 8px;
+}
+.issue-date {
+  margin-top: 10px;
+}
+.issue-value {
+  font-weight: bold;
+}
+.cost, .ticket-code {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 19px;
+}
+.cost-value {
+  font-weight: bold;
+}
+hr {
+  border: none;
+  height: 1px;
+  background: #e0e0e0;
+  margin: 10px 0;
+}
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.details-link {
+  font-weight: bold;
+  color: #06577b;
+  cursor: pointer;
+}
+
+/* Overlay per ingrandire QR */
+.overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overlay-img {
+  max-width: 90%;
+  max-height: 90%;
+}
