@@ -170,10 +170,8 @@ body {
 }
 .scroller .content .ticket .bottom .time svg {
   margin-left: -10px;
-  width: 30px;     /* 🔽 Riduci la dimensione del clock */
-  height: 30px;    /* 🔽 Altezza proporzionata */
-
-
+  width: 50px;     /* 🔽 Riduci la dimensione del clock */
+  height: 50px;    /* 🔽 Altezza proporzionata */
 }
 .scroller .content .ticket .bottom .time .time-remaining {
   font-family: "Roboto", sans-serif;
@@ -190,7 +188,7 @@ body {
   align-items: center;
   height: 17px;
   border-radius: 20px;
-  margin-left: 100px;
+  margin-left: 80px;
   border: 1px solid #00567b;
   background: #dddddd;
 }
