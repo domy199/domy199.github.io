@@ -29,7 +29,8 @@ body {
 }
 .topbar svg {
   position: absolute;
-  left: 20px;
+  left: 10px;
+  width: 70%;
 }
 .topbar .ticket-attivo {
   font-family: "Nunito Sans", sans-serif;
@@ -65,10 +66,15 @@ body {
 
 /* Titoli */
 .scroller .content .ticket-name {
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: 800;
-  font-size: 1.2rem;
-  color: #00567b;
+  font-family: "Roboto", sans-serif;
+  /*font-weight: 800;*/
+  /*font-size: 1.2rem;*/
+  color: #06577b;
+  
+  margin-top: 40px;
+  
+  font-size: 24px;
+  font-weight: bold;
 }
 .scroller .content .ticket-name-description {
   font-family: sans-serif;
