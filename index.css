@@ -170,8 +170,8 @@ body {
 }
 .scroller .content .ticket .bottom .time svg {
   margin-left: -10px;
-  width: 75px;     /* 🔽 Riduci la dimensione del clock */
-  height: 75px;    /* 🔽 Altezza proporzionata */
+  width: 30;     /* 🔽 Riduci la dimensione del clock */
+  height: 30px;    /* 🔽 Altezza proporzionata */
 }
 .scroller .content .ticket .bottom .time .time-remaining {
   font-family: "Roboto", sans-serif;
@@ -200,8 +200,9 @@ body {
   z-index: -5;
 }
 .scroller .content .ticket .bottom .time .lock {
-  width: 75px;     /* 🔽 Riduci la dimensione del clock */
-  height: 75px;
+  width: 30px;     /* 🔽 Riduci la dimensione del clock */
+  height: 30px;
+  align-items: center;
   margin-bottom: -3px;
   margin-right: -1px;
 }
