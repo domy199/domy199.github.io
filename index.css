@@ -272,7 +272,7 @@ body {
 .scroller .content .under-animation h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   color: white;
   margin-left: 10px;
 }
@@ -280,9 +280,9 @@ body {
 .scroller .content .emesso-il {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   color: white;
-  margin-top: 8px;
+  margin-top: 16px;
 }
 .scroller .content .data-emesso-il {
   font-family: "Roboto", sans-serif;
