@@ -14,7 +14,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #358551;
+  background: #388454;
 }
 
 /* Topbar */
@@ -24,19 +24,19 @@ body {
   align-items: center;
   width: 100vw;
   height: 7.5vh;
-  padding-bottom: 13px;
+  padding-bottom: 15px;
   color: white;
 }
 .topbar svg {
   position: absolute;
-  left: 25px;
+  left: 35px;
   width: 25%;
 }
 .topbar .ticket-attivo {
+  align-items: center;
   font-family: "Roboto", sans-serif;
   font-weight: 800;
   font-size: 0.95rem;
-  letter-spacing: 1px;
 }
 
 /* Scroller & Content */
