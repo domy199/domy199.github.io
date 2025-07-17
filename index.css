@@ -168,6 +168,8 @@ body {
   justify-content: left;
   width: 100%;
   height: 45px;
+
+  
 }
 .scroller .content .ticket .bottom .time svg {
   margin-left: -10px;
@@ -186,10 +188,8 @@ body {
 }
 .scroller .content .ticket .bottom .time .progress-bar {
   width: 30%;
-  align-items: center;
   height: 17px;
   border-radius: 20px;
-  margin-left: 20%;
   border: 1px solid #00567b;
   background: #dddddd;
 }
@@ -201,19 +201,28 @@ body {
   z-index: -5;
 }
 .scroller .content .ticket .bottom .time .lock {
-  margin-bottom: -3px;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  padding-left: 150px;
+  display: flex;
   align-items: center;
+  justify-content: center;
 }
 .scroller .content .ticket .bottom .time .lock img {
-  width: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 .scroller .content .ticket .bottom .time .number {
   font-family: "Roboto", sans-serif;
   font-size: 0.85rem;
   font-weight: 500;
   color: #00567b;
-  align-items: center;
   margin-bottom: 2px;
+  align-items: center;
+  margin-left: 30%;
+  pointer-events: none;
 }
 
 /* Animazione orizzontale */
