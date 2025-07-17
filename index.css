@@ -199,6 +199,7 @@ body {
 
 .scroller .content .ticket .bottom .time .progress-bar div {
   width: 100%;
+  outline: 1px solid red;
   height: 100%; /* Meglio di 17px, per seguire il parent */
   background-color: #00567b;
   border-radius: 20px;
