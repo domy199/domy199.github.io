@@ -189,7 +189,6 @@ body {
   align-items: center;
   height: 17px;
   border-radius: 20px;
-  margin-left: 20%;
   border: 1px solid #00567b;
   background: #dddddd;
 }
@@ -202,17 +201,18 @@ body {
 }
 .scroller .content .ticket .bottom .time .lock {
   margin-bottom: -3px;
-  align-items: center;
 }
 .scroller .content .ticket .bottom .time .lock img {
-  width: 50%;
+  vertical-align: center;
+  width: 50px;
+  height: 50px;
 }
 .scroller .content .ticket .bottom .time .number {
   font-family: "Roboto", sans-serif;
+  align-items: center;
   font-size: 0.85rem;
   font-weight: 500;
   color: #00567b;
-  align-items: center;
   margin-bottom: 2px;
 }
 
@@ -312,12 +312,12 @@ body {
   width: 100%;
 }
 .scroller .content .dettagli h1 {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 800;
   font-size: 1.175rem;
 }
 .scroller .content .dettagli h2 {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 800;
   font-size: 1.16rem;
   color: #00567b;
