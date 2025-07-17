@@ -187,15 +187,17 @@ body {
   margin-left: -1px;
 }
 .scroller .content .ticket .bottom .time .progress-bar {
-  width: 40vw;
+  width: 20vw;
   height: 17px;
   border-radius: 20px;
   border: 1px solid #00567b;
   background: #dddddd;
+  align-items: center;
 
 }
 .scroller .content .ticket .bottom .time .progress-bar div {
-  width: 40vw;
+  width: 20vw;
+  align-items: center;
   height: 100%;
   background-color: #00567b;
   border-radius: 20px;
