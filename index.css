@@ -200,7 +200,7 @@ body {
   height: 17px;
   background-color: #00567b;
   border-radius: 20px;
-  margin-left: 10px;
+  margin-left: -5px;
 }
 .scroller .content .ticket .bottom .time .lock {
   position: relative;
