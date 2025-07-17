@@ -213,8 +213,8 @@ body {
 .scroller .content .ticket .bottom .time .lock img {
   width: 50%;
   height: 50%;
-  margin-top: -3px;
-  margin-right: -35px;
+  margin-top: 0%;
+  margin-right: -38px;
   object-fit: contain;
 }
 .scroller .content .ticket .bottom .time .number {
