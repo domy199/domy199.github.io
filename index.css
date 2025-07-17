@@ -196,7 +196,7 @@ body {
 
 }
 .scroller .content .ticket .bottom .time .progress-bar div {
-  width: 85%;
+  width: 100%;
   height: 100%;
   background-color: #00567b;
   border-radius: 20px;
@@ -213,8 +213,8 @@ body {
 .scroller .content .ticket .bottom .time .lock img {
   width: 50%;
   height: 50%;
-  margin-top: -5px;
-  margin-right: -45px;
+  margin-top: -3px;
+  margin-right: -35px;
   object-fit: contain;
 }
 .scroller .content .ticket .bottom .time .number {
