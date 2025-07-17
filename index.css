@@ -205,11 +205,11 @@ body {
   height: 30px;
   align-items: center;
   margin-bottom: -3px;
+  margin-top: 5px;
   margin-right: -1px;
 }
 .scroller .content .ticket .bottom .time .lock img {
   width: 50%;
-  align-items: center;
 }
 .scroller .content .ticket .bottom .time .number {
   font-family: "Roboto", sans-serif;
