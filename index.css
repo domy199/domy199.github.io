@@ -271,18 +271,17 @@ body {
 }
 .scroller .content .under-animation h1 {
   font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 1.15rem;
+  font-weight: 400;
+  font-size: 0.95rem;
   color: white;
-  margin-left: 18px;
+  margin-left: 10px;
 }
-
 /* Data e costo */
 .scroller .content .emesso-il {
   font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 1.15rem;
-  color: #333333;
+  font-weight: 400;
+  font-size: 0.95rem;
+  color: white;
   margin-top: 8px;
 }
 .scroller .content .data-emesso-il {
