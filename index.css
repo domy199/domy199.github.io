@@ -141,7 +141,7 @@ body {
 
 /*     • QR code */
 .scroller .content .ticket .bottom .qrcode {
-  width: 80%;
+  width: 90%;
   margin: 15px auto;
 }
 .scroller .content .ticket .bottom .qrcode img {
@@ -168,8 +168,8 @@ body {
 }
 .scroller .content .ticket .bottom .time svg {
   margin-left: -10px;
-  width: 16px;     /* 🔽 Riduci la dimensione del clock */
-  height: 16px;    /* 🔽 Altezza proporzionata */
+  width: 24px;     /* 🔽 Riduci la dimensione del clock */
+  height: 24px;    /* 🔽 Altezza proporzionata */
 
 
 }
