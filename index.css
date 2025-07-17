@@ -101,7 +101,7 @@ body {
   align-items: center;
   height: 80px;
   width: 100%;
-  margin-top: -2%;
+  margin-top: -5%;
 }
 .scroller .content .ticket .logo-text {
   display: flex;
@@ -119,6 +119,8 @@ body {
   line-height: 1rem;
 }
 .scroller .content .ticket .top svg {
+  width: 30%;
+  height: 30%;
   transform: rotate(90deg);
   -webkit-tap-highlight-color: transparent;
   margin-right: -1%;
