@@ -28,7 +28,7 @@ body {
 }
 .topbar svg {
   position: absolute;
-  left: -30px;
+  left: -10px;
   width: 25%;
   height: 15px;
 }
@@ -70,8 +70,6 @@ body {
   font-weight: 800;
   font-size: 1.2rem;
   color: #06577b;
-  /*margin-top: 5px;*/
-  font-size: 20px;
 }
 .scroller .content .ticket-name-description {
   font-family: sans-serif;
