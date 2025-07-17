@@ -203,10 +203,9 @@ body {
 .scroller .content .ticket .bottom .time .lock {
   width: 30px;     /* 🔽 Riduci la dimensione del lock */
   height: 30px;
-  align-items: center;
   margin-bottom: -3px;
-  margin-top: 10px;
-  margin-right: 32px;
+  align-items: center;
+  margin-right: 10px;
 }
 .scroller .content .ticket .bottom .time .lock img {
   width: 50%;
