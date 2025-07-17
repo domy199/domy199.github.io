@@ -107,15 +107,17 @@ body {
   display: flex;
   align-items: center;
   width: 80%;
+  
 }
 .scroller .content .ticket .logo-text img {
   width: 20px;
+  margin-left: -5px;
 }
 .scroller .content .ticket .logo-text h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   font-size: 0.8rem;
-  margin-left: 16px;
+  margin-left: 11px;
   line-height: 1rem;
 }
 .scroller .content .ticket .top svg {
@@ -156,7 +158,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   font-size: 0.8rem;
-  margin-top: 5px;
+  margin-top: 0px;
   margin-bottom: 5px;
   color: #00567b;
 }
@@ -170,8 +172,8 @@ body {
   height: 45px;
 }
 .scroller .content .ticket .bottom .time svg {
-  margin-left: -10px;
-  width: 30;     /* 🔽 Riduci la dimensione del clock */
+  margin-left: -5px;
+  width: 30px;     /* 🔽 Riduci la dimensione del clock */
   height: 30px;    /* 🔽 Altezza proporzionata */
 }
 .scroller .content .ticket .bottom .time .time-remaining {
