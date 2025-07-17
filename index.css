@@ -201,12 +201,12 @@ body {
   z-index: -5;
 }
 .scroller .content .ticket .bottom .time .lock {
-  width: 30px;     /* 🔽 Riduci la dimensione del clock */
+  width: 30px;     /* 🔽 Riduci la dimensione del lock */
   height: 30px;
   align-items: center;
   margin-bottom: -3px;
-  margin-top: 5px;
-  margin-right: -1px;
+  margin-top: 10px;
+  margin-right: 58px;
 }
 .scroller .content .ticket .bottom .time .lock img {
   width: 50%;
@@ -217,7 +217,7 @@ body {
   font-weight: 450;
   color: #00567b;
   margin-bottom: 2px;
-  margin-right: -28px;
+  margin-right: -58px;
 }
 
 /* Animazione orizzontale */
