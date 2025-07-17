@@ -188,7 +188,7 @@ body {
 }
 .scroller .content .ticket .bottom .time .progress-bar {
   flex-grow: 1;           /* si espande nello spazio libero */
-  max-width: 200px;       /* ma non oltre questo limite */
+  max-width: 400px;       /* ma non oltre questo limite */
   height: 17px;
   border-radius: 20px;
   border: 1px solid #00567b;
