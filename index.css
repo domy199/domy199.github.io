@@ -189,11 +189,9 @@ body {
 .scroller .content .ticket .bottom .time .progress-bar {
   width: 30%;
   height: 17px;
-
   border-radius: 20px;
   border: 1px solid #00567b;
   background: #dddddd;
-  margin-right: 10px;
 
 }
 .scroller .content .ticket .bottom .time .progress-bar div {
@@ -201,8 +199,6 @@ body {
   height: 100%;
   background-color: #00567b;
   border-radius: 20px;
-  z-index: -5;
-  margin-right: 10px;
 }
 .scroller .content .ticket .bottom .time .lock {
   position: relative;
