@@ -192,6 +192,8 @@ body {
   border-radius: 20px;
   border: 1px solid #00567b;
   background: #dddddd;
+  margin-left: 10px;
+
 }
 .scroller .content .ticket .bottom .time .progress-bar div {
   width: 85%;
@@ -206,13 +208,13 @@ body {
   height: 35px;
   display: flex;
   align-items: center;
-  padding-top: 2px;
   justify-content: center;
 }
 .scroller .content .ticket .bottom .time .lock img {
   width: 50%;
   height: 50%;
-  margin-right: -50px;
+  margin-top: -5px;
+  margin-right: -45px;
   object-fit: contain;
 }
 .scroller .content .ticket .bottom .time .number {
