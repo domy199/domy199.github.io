@@ -192,7 +192,7 @@ body {
   border-radius: 20px;
   border: 1px solid #00567b;
   background: #dddddd;
-  gap: 20;
+  transform: translateX(20px);
 
 }
 .scroller .content .ticket .bottom .time .progress-bar div {
@@ -200,7 +200,7 @@ body {
   height: 17px;
   background-color: #00567b;
   border-radius: 20px;
-  gap: 20;
+  
 }
 .scroller .content .ticket .bottom .time .lock {
   position: relative;
