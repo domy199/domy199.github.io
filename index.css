@@ -193,14 +193,16 @@ body {
   border: 1px solid #00567b;
   background: #dddddd;
   transform: translateX(15px);
-
+  box-sizing: border-box;
+  overflow: hidden; /* Previene sforamenti visivi */
 }
+
 .scroller .content .ticket .bottom .time .progress-bar div {
   width: 100%;
-  height: 17px;
+  height: 100%; /* Meglio di 17px, per seguire il parent */
   background-color: #00567b;
   border-radius: 20px;
-  
+  box-sizing: border-box;
 }
 .scroller .content .ticket .bottom .time .lock {
   position: relative;
