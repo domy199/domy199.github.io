@@ -204,7 +204,7 @@ body {
   position: relative;
   width: 35px;
   height: 35px;
-  padding-left: 30px;
+  margin-left: 30px;
   display: flex;
   align-items: center;
   padding-top: 2px;
