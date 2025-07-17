@@ -27,7 +27,7 @@ body {
 }
 .topbar svg {
   position: absolute;
-  left: -11px;
+  left: -12px;
   width: 25%;
   height: 23px;
 }
@@ -123,7 +123,7 @@ body {
   height: 30%;
   transform: rotate(90deg);
   -webkit-tap-highlight-color: transparent;
-  margin-right: -7%;
+  margin-right: -10%;
 }
 .scroller .content .ticket .top svg.close {
   transform: rotate(270deg);
