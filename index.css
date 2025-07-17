@@ -165,8 +165,7 @@ body {
 .scroller .content .ticket .bottom .time {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 10px;
+  justify-content: left;
   width: 100%;
   height: 45px;
 }
@@ -201,17 +200,13 @@ body {
   border-radius: 20px;
   z-index: -5;
 }
-.scroller .content .ticket .bottom .time .lock-number {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: 5px;
-}
 .scroller .content .ticket .bottom .time .lock {
-  width: 30px;
+  width: 30px;     /* 🔽 Riduci la dimensione del lock */
   height: 30px;
+  align-items: center;
+  margin-bottom: -3px;
+  margin-top: 10px;
+  margin-right: 64px;
 }
 .scroller .content .ticket .bottom .time .lock img {
   width: 50%;
@@ -221,7 +216,8 @@ body {
   font-size: 0.85rem;
   font-weight: 500;
   color: #00567b;
-  margin: 0;
+  margin-bottom: 2px;
+  margin-right: -98px;
 }
 
 /* Animazione orizzontale */
