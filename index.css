@@ -187,7 +187,8 @@ body {
   margin-left: -1px;
 }
 .scroller .content .ticket .bottom .time .progress-bar {
-  width: 30%;
+  width: 100%;
+  max-width: 200px; /* Limita su schermi grandi */
   height: 17px;
   border-radius: 20px;
   border: 1px solid #00567b;
