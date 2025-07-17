@@ -60,7 +60,7 @@ body {
   margin-top: 10px;
 }
 .scroller .content .ferrovie-logo img {
-  width: 75%;
+  width: 70%;
 }
 
 /* Titoli */
@@ -74,9 +74,9 @@ body {
   font-family: sans-serif;
   font-weight: normal;
   font-size: 0.8rem;
-  color: #1e1e1e;
+  color: #505050;
   margin-top: 2px;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 
 /* Ticket box */
