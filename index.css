@@ -184,61 +184,37 @@ body {
   margin-bottom: 2px;
   margin-left: -1px;
 }
-
-.scroller .content .ticket .bottom .time-elements {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.scroller .content .ticket .bottom .time .progress-bar {
+  width: 30%;
   align-items: center;
-  width: 100%;
-  gap: 10px;
-  margin-left: 5px;
-}
-
-.progress-wrapper,
-.lock-wrapper,
-.number-wrapper {
-  flex: 1 1 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Progress bar coerente con stile esistente */
-.progress-wrapper .progress-bar {
-  width: 100%;
   height: 17px;
   border-radius: 20px;
+  margin-left: 20%;
   border: 1px solid #00567b;
   background: #dddddd;
-  align-items: center;
-  
 }
-
-.progress-wrapper .progress-bar .inner-progress-bar {
+.scroller .content .ticket .bottom .time .progress-bar div {
+  width: 75%;
   height: 100%;
-  width: 75%; /* Personalizzabile in JS */
   background-color: #00567b;
   border-radius: 20px;
+  z-index: -5;
 }
-
-/* Lock icona */
-.lock-wrapper img.lock {
-  width: 20px;
-  height: 20px;
-  vertical-align: center;
+.scroller .content .ticket .bottom .time .lock {
+  margin-bottom: -3px;
+  align-items: center;
 }
-
-/* Numero coerente con stile originale */
-.number-wrapper .number {
+.scroller .content .ticket .bottom .time .lock img {
+  width: 50%;
+}
+.scroller .content .ticket .bottom .time .number {
   font-family: "Roboto", sans-serif;
   font-size: 0.85rem;
   font-weight: 500;
   color: #00567b;
+  align-items: center;
   margin-bottom: 2px;
 }
-
-/**/
 
 /* Animazione orizzontale */
 .scroller .content .animation {
@@ -336,12 +312,12 @@ body {
   width: 100%;
 }
 .scroller .content .dettagli h1 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 800;
   font-size: 1.175rem;
 }
 .scroller .content .dettagli h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 800;
   font-size: 1.16rem;
   color: #00567b;
