@@ -177,12 +177,12 @@ body {
 .scroller .content .ticket .bottom .time .time-remaining {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 700;
   align-items: center;
   color: #00567b;
   margin-right: 1px;
   margin-bottom: 2px;
-  margin-left: 2px;
+  margin-left: 1px;
 }
 .scroller .content .ticket .bottom .time .progress-bar {
   width: 30%;
@@ -208,12 +208,12 @@ body {
   margin-right: -1px;
 }
 .scroller .content .ticket .bottom .time .lock img {
-  width: 75%;
+  width: 50%;
   align-items: center;
 }
 .scroller .content .ticket .bottom .time .number {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-size: 0.95rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.75rem;
   font-weight: 550;
   color: #00567b;
   margin-bottom: 2px;
