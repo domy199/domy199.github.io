@@ -29,7 +29,7 @@ body {
   position: absolute;
   left: -10px;
   width: 25%;
-  height: 20px;
+  height: 23px;
 }
 .topbar .ticket-attivo {
   align-items: center;
@@ -40,7 +40,7 @@ body {
 
 /* Scroller & Content */
 .scroller {
-  padding-top: 1%;
+  padding-top: 3%;
   width: 88vw;
   height: 88vh;
   overflow: scroll;
