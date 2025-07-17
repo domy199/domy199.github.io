@@ -204,10 +204,10 @@ body {
   position: relative;
   width: 35px;
   height: 35px;
-  padding-left: 20px;
+  padding-left: 35px;
   display: flex;
   align-items: center;
-  padding-top: 4px;
+  padding-top: 2px;
   justify-content: center;
 }
 .scroller .content .ticket .bottom .time .lock img {
