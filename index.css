@@ -191,6 +191,7 @@ body {
   border-radius: 20px;
   border: 1px solid #00567b;
   background: #dddddd;
+  margin-left: 35px;
 }
 .scroller .content .ticket .bottom .time .progress-bar div {
   width: 75%;
