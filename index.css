@@ -192,13 +192,11 @@ body {
   border-radius: 20px;
   border: 1px solid #00567b;
   background: #dddddd;
-  align-items: center;
 
 }
 .scroller .content .ticket .bottom .time .progress-bar div {
-  width: 20vw;
-  align-items: center;
-  height: 100%;
+  width: 30vw;
+  height: 17px;
   background-color: #00567b;
   border-radius: 20px;
 }
