@@ -188,7 +188,7 @@ body {
   align-items: center;
   height: 17px;
   border-radius: 20px;
-  margin-left: 10px;
+  margin-left: 1px;
   border: 1px solid #00567b;
   background: #dddddd;
 }
@@ -208,6 +208,7 @@ body {
 }
 .scroller .content .ticket .bottom .time .lock img {
   width: 75%;
+  align-items: center;
 }
 .scroller .content .ticket .bottom .time .number {
   font-family: "Plus Jakarta Sans", sans-serif;
