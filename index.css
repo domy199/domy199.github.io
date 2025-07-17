@@ -141,7 +141,7 @@ body {
 
 /*     • QR code */
 .scroller .content .ticket .bottom .qrcode {
-  width: 90%;
+  width: 95%;
   margin: 15px auto;
 }
 .scroller .content .ticket .bottom .qrcode img {
@@ -168,16 +168,16 @@ body {
 }
 .scroller .content .ticket .bottom .time svg {
   margin-left: -10px;
-  width: 24px;     /* 🔽 Riduci la dimensione del clock */
-  height: 24px;    /* 🔽 Altezza proporzionata */
+  width: 30px;     /* 🔽 Riduci la dimensione del clock */
+  height: 30px;    /* 🔽 Altezza proporzionata */
 
 
 }
 .scroller .content .ticket .bottom .time .time-remaining {
   font-family: "Roboto", sans-serif;
-  font-size: 0.95rem;
-  font-weight: 550;
-  letter-spacing: -2px;
+  font-size: 1rem;
+  font-weight: 400;
+  align-items: center;
   color: #00567b;
   margin-right: 1px;
   margin-bottom: 2px;
