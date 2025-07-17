@@ -67,8 +67,8 @@ body {
 /* Titoli */
 .scroller .content .ticket-name {
   font-family: "Roboto", sans-serif;
-  /*font-weight: 800;*/
-  /*font-size: 1.2rem;*/
+  font-weight: 800;
+  font-size: 1.2rem;
   color: #06577b;
   /*margin-top: 5px;*/
   font-size: 20px;
@@ -111,12 +111,12 @@ body {
   width: 80%;
 }
 .scroller .content .ticket .logo-text img {
-  width: 30px;
+  width: 20px;
 }
 .scroller .content .ticket .logo-text h1 {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 800;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   letter-spacing: 1px;
   margin-left: 16px;
   line-height: 1.2rem;
