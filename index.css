@@ -57,9 +57,10 @@ body {
 .scroller .content .ferrovie-logo {
   width: 50px;
   margin-bottom: 14px;
+  margin-top: 10px;
 }
 .scroller .content .ferrovie-logo img {
-  width: 100%;
+  width: 80%;
 }
 
 /* Titoli */
@@ -137,7 +138,7 @@ body {
 
 /*     • QR code */
 .scroller .content .ticket .bottom .qrcode {
-  width: 80%;
+  width: 100%;
   margin: 55px 0;
 }
 .scroller .content .ticket .bottom .qrcode img {
