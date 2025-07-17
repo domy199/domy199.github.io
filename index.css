@@ -204,9 +204,10 @@ body {
   position: relative;
   width: 30px;
   height: 30px;
-  padding-left: 10px;
+  padding-left: 15px;
   display: flex;
   align-items: center;
+  padding-top: 4px;
   justify-content: center;
 }
 .scroller .content .ticket .bottom .time .lock img {
@@ -221,7 +222,7 @@ body {
   color: #00567b;
   margin-bottom: 2px;
   align-items: center;
-  margin-left: 5%;
+  margin-left: 7%;
   pointer-events: none;
 }
 
