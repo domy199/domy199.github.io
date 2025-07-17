@@ -177,12 +177,12 @@ body {
 .scroller .content .ticket .bottom .time .time-remaining {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 650;
   align-items: center;
   color: #00567b;
   margin-right: 1px;
   margin-bottom: 2px;
-  margin-left: 1px;
+  margin-left: -1px;
 }
 .scroller .content .ticket .bottom .time .progress-bar {
   width: 30%;
