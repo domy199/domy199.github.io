@@ -30,7 +30,7 @@ body {
 .topbar svg {
   position: absolute;
   left: 25px;
-  width: 50%;
+  width: 25%;
 }
 .topbar .ticket-attivo {
   font-family: "Roboto", sans-serif;
@@ -57,7 +57,7 @@ body {
 /* Logo Ferrovie */
 .scroller .content .ferrovie-logo {
   width: 50px;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
   margin-top: 10px;
 }
 .scroller .content .ferrovie-logo img {
@@ -70,17 +70,17 @@ body {
   /*font-weight: 800;*/
   /*font-size: 1.2rem;*/
   color: #06577b;
-  margin-top: 5px;
-  font-size: 12px;
+  /*margin-top: 5px;*/
+  font-size: 20px;
   font-weight: bold;
 }
 .scroller .content .ticket-name-description {
   font-family: sans-serif;
   font-weight: normal;
-  font-size: 0.5rem;
+  font-size: 0.8rem;
   /*color: #5e5e5e;*/
   margin-top: 1px;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 /* Ticket box */
@@ -153,8 +153,8 @@ body {
 .scroller .content .ticket .bottom .zoom-qrcode {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 800;
-  font-size: 1.1rem;
-  margin-top: -5px;
+  font-size: 1rem;
+  margin-top: 0px;
   margin-bottom: 10px;
   color: #00567b;
 }
