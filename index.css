@@ -183,12 +183,14 @@ body {
   color: #00567b;
   margin-right: 1px;
   margin-bottom: 2px;
-  margin-left: -4px;
+  margin-left: 2px;
 }
 .scroller .content .ticket .bottom .time .progress-bar {
   width: 30%;
+  align-items: center;
   height: 17px;
   border-radius: 20px;
+  margin-left: 100px;
   border: 1px solid #00567b;
   background: #dddddd;
 }
