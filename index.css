@@ -27,7 +27,7 @@ body {
 }
 .topbar svg {
   position: absolute;
-  left: -10px;
+  left: -12px;
   width: 25%;
   height: 23px;
 }
@@ -99,9 +99,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 58px;
+  height: 80px;
   width: 100%;
-  margin-top: -3%;
+  margin-top: -2%;
 }
 .scroller .content .ticket .logo-text {
   display: flex;
@@ -121,9 +121,11 @@ body {
 .scroller .content .ticket .top svg {
   transform: rotate(90deg);
   -webkit-tap-highlight-color: transparent;
+  margin-right: -1%;
 }
 .scroller .content .ticket .top svg.close {
   transform: rotate(270deg);
+  
 }
 
 /*   – Bottom sezione */
@@ -139,7 +141,7 @@ body {
 
 /*     • QR code */
 .scroller .content .ticket .bottom .qrcode {
-  width: 100%;
+  width: 90%;
   margin: 20px 0;
 }
 .scroller .content .ticket .bottom .qrcode img {
@@ -149,7 +151,7 @@ body {
 /*     • Label ingrandisci */
 .scroller .content .ticket .bottom .zoom-qrcode {
   font-family: "Roboto", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1rem;
   margin-top: -10px;
   margin-bottom: 10px;
