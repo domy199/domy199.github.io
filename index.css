@@ -107,17 +107,15 @@ body {
   display: flex;
   align-items: center;
   width: 80%;
-  
 }
 .scroller .content .ticket .logo-text img {
   width: 20px;
-  margin-left: -5px;
 }
 .scroller .content .ticket .logo-text h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   font-size: 0.8rem;
-  margin-left: 11px;
+  margin-left: 16px;
   line-height: 1rem;
 }
 .scroller .content .ticket .top svg {
@@ -172,7 +170,7 @@ body {
   height: 45px;
 }
 .scroller .content .ticket .bottom .time svg {
-  margin-left: -5px;
+  margin-left: -10px;
   width: 30px;     /* 🔽 Riduci la dimensione del clock */
   height: 30px;    /* 🔽 Altezza proporzionata */
 }
