@@ -31,12 +31,13 @@ body {
   position: absolute;
   left: 35px;
   width: 25%;
+  height: 80px;
 }
 .topbar .ticket-attivo {
   align-items: center;
   font-family: "Roboto", sans-serif;
-  font-weight: 800;
-  font-size: 0.95rem;
+  font-weight: 700;
+  font-size: 1rem;
 }
 
 /* Scroller & Content */
@@ -78,7 +79,7 @@ body {
   font-family: sans-serif;
   font-weight: normal;
   font-size: 0.8rem;
-  /*color: #5e5e5e;*/
+  color: #E0E0E0;
   margin-top: 1px;
   margin-bottom: 20px;
 }
