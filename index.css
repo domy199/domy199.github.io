@@ -123,7 +123,7 @@ body {
   height: 30%;
   transform: rotate(90deg);
   -webkit-tap-highlight-color: transparent;
-  margin-right: -1%;
+  margin-right: -5%;
 }
 .scroller .content .ticket .top svg.close {
   transform: rotate(270deg);
@@ -154,8 +154,8 @@ body {
 .scroller .content .ticket .bottom .zoom-qrcode {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
-  font-size: 0.9rem;
-  margin-top: -10px;
+  font-size: 0.8rem;
+  margin-top: -20px;
   margin-bottom: 10px;
   color: #00567b;
 }
