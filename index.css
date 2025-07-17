@@ -184,38 +184,61 @@ body {
   margin-bottom: 2px;
   margin-left: -1px;
 }
-.scroller .content .ticket .bottom .time .progress-bar {
-  width: 30%;
+
+.scroller .content .ticket .bottom .time-elements {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
+  gap: 10px;
+  margin-left: 5px;
+}
+
+.progress-wrapper,
+.lock-wrapper,
+.number-wrapper {
+  flex: 1 1 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Progress bar coerente con stile esistente */
+.progress-wrapper .progress-bar {
+  width: 100%;
   height: 17px;
   border-radius: 20px;
   border: 1px solid #00567b;
   background: #dddddd;
-  margin-left: 35px;
+  align-items: center;
+  
 }
-.scroller .content .ticket .bottom .time .progress-bar div {
-  width: 75%;
+
+.progress-wrapper .progress-bar .inner-progress-bar {
   height: 100%;
+  width: 75%; /* Personalizzabile in JS */
   background-color: #00567b;
   border-radius: 20px;
-  z-index: -5;
 }
-.scroller .content .ticket .bottom .time .lock {
-  margin-bottom: -3px;
-}
-.scroller .content .ticket .bottom .time .lock img {
-  vertical-align: center;
+
+/* Lock icona */
+.lock-wrapper img.lock {
   width: 20px;
   height: 20px;
+  vertical-align: center;
 }
-.scroller .content .ticket .bottom .time .number {
+
+/* Numero coerente con stile originale */
+.number-wrapper .number {
   font-family: "Roboto", sans-serif;
-  align-items: center;
   font-size: 0.85rem;
   font-weight: 500;
   color: #00567b;
   margin-bottom: 2px;
 }
+
+/**/
 
 /* Animazione orizzontale */
 .scroller .content .animation {
