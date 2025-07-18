@@ -8,6 +8,16 @@ document.addEventListener('DOMContentLoaded', () => {
         bottom.classList.toggle("hidden");
         arrow.classList.toggle("close");
     });
+    const CORRECT_PASSWORD = "Ferroveras"; // <-- Cambia la password qui
+
+    document.getElementById("password-submit").addEventListener("click", () => {
+        const input = document.getElementById("password-input").value;
+        if (input === CORRECT_PASSWORD) {
+            document.getElementById("password-screen").style.display = "none";
+        } else {
+            document.getElementById("password-error").style.display = "block";
+        }    
+    });
 
     const pad = n => String(n).padStart(2, '0');
 
