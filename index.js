@@ -1,114 +1,37 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const arrow = document.querySelector(".button1")
-    const ticket = document.querySelector(".ticket")
-    const bottom = document.querySelector(".bottom")
-    arrow.addEventListener('click', (e) => {
-        ticket.classList.toggle("close")
-        bottom.classList.toggle("hidden")
-        arrow.classList.toggle("close")
-    })
-    var date = new Date()
+    const arrow = document.querySelector(".button1");
+    const ticket = document.querySelector(".ticket");
+    const bottom = document.querySelector(".bottom");
 
-    if(date.getMonth()+1 >= 10){
-        if(date.getDate() >= 10){
-            if(date.getMinutes() >= 10 && date.getHours() >= 10){
-                document.querySelector(".under-animation-attivato-il").textContent = `${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()} - ${date.getHours()}:${date.getMinutes()}`
-                document.querySelector(".data-emesso-il").textContent = `${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()} - ${date.getHours()}:${date.getMinutes()}`
-            }
-            else if(date.getMinutes() < 10 && date.getHours() >= 10){
-                document.querySelector(".under-animation-attivato-il").textContent = `${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()} - ${date.getHours()}:0${date.getMinutes()}`
-                document.querySelector(".data-emesso-il").textContent = `${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()} - ${date.getHours()}:0${date.getMinutes()}`
-            }
-            else if(date.getMinutes() >= 10 && date.getHours() < 10){
-                document.querySelector(".under-animation-attivato-il").textContent = `${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()} - 0${date.getHours()}:${date.getMinutes()}`
-                document.querySelector(".data-emesso-il").textContent = `${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()} - 0${date.getHours()}:${date.getMinutes()}`
-            }
-            else {
-                document.querySelector(".under-animation-attivato-il").textContent = `${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()} - 0${date.getHours()}:0${date.getMinutes()}`
-                document.querySelector(".data-emesso-il").textContent = `${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()} - 0${date.getHours()}:0${date.getMinutes()}`
-            }
-        }
-        else {
-            if(date.getMinutes() >= 10 && date.getHours() >= 10){
-                document.querySelector(".under-animation-attivato-il").textContent = `0${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()} - ${date.getHours()}:${date.getMinutes()}`
-                document.querySelector(".data-emesso-il").textContent = `0${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()} - ${date.getHours()}:${date.getMinutes()}`
-            }
-            else if(date.getMinutes() < 10 && date.getHours() >= 10){
-                document.querySelector(".under-animation-attivato-il").textContent = `0${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()} - ${date.getHours()}:0${date.getMinutes()}`
-                document.querySelector(".data-emesso-il").textContent = `0${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()} - ${date.getHours()}:0${date.getMinutes()}`
-            }
-            else if(date.getMinutes() >= 10 && date.getHours() < 10){
-                document.querySelector(".under-animation-attivato-il").textContent = `0${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()} - 0${date.getHours()}:${date.getMinutes()}`
-                document.querySelector(".data-emesso-il").textContent = `0${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()} - 0${date.getHours()}:${date.getMinutes()}`
-            }
-            else {
-                document.querySelector(".under-animation-attivato-il").textContent = `0${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()} - 0${date.getHours()}:0${date.getMinutes()}`
-                document.querySelector(".data-emesso-il").textContent = `0${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()} - 0${date.getHours()}:0${date.getMinutes()}`
-            }
-        }
-    }
-    else {
-        if(date.getDate() >= 10){
-            if(date.getMinutes() >= 10 && date.getHours() >= 10){
-                document.querySelector(".under-animation-attivato-il").textContent = `${date.getDate()}/0${date.getMonth()+1}/${date.getFullYear()} - ${date.getHours()}:${date.getMinutes()}`
-                document.querySelector(".data-emesso-il").textContent = `${date.getDate()}/0${date.getMonth()+1}/${date.getFullYear()} - ${date.getHours()}:${date.getMinutes()}`
-            }
-            else if(date.getMinutes() < 10 && date.getHours() >= 10){
-                document.querySelector(".under-animation-attivato-il").textContent = `${date.getDate()}/0${date.getMonth()+1}/${date.getFullYear()} - ${date.getHours()}:0${date.getMinutes()}`
-                document.querySelector(".data-emesso-il").textContent = `${date.getDate()}/0${date.getMonth()+1}/${date.getFullYear()} - ${date.getHours()}:0${date.getMinutes()}`
-            }
-            else if(date.getMinutes() >= 10 && date.getHours() < 10){
-                document.querySelector(".under-animation-attivato-il").textContent = `${date.getDate()}/0${date.getMonth()+1}/${date.getFullYear()} - 0${date.getHours()}:${date.getMinutes()}`
-                document.querySelector(".data-emesso-il").textContent = `${date.getDate()}/0${date.getMonth()+1}/${date.getFullYear()} - 0${date.getHours()}:${date.getMinutes()}`
-            }
-            else {
-                document.querySelector(".under-animation-attivato-il").textContent = `${date.getDate()}/0${date.getMonth()+1}/${date.getFullYear()} - 0${date.getHours()}:0${date.getMinutes()}`
-                document.querySelector(".data-emesso-il").textContent = `${date.getDate()}/0${date.getMonth()+1}/${date.getFullYear()} - 0${date.getHours()}:0${date.getMinutes()}`
-            }
-        }
-        else {
-            if(date.getMinutes() >= 10 && date.getHours() >= 10){
-                document.querySelector(".under-animation-attivato-il").textContent = `0${date.getDate()}/0${date.getMonth()+1}/${date.getFullYear()} - ${date.getHours()}:${date.getMinutes()}`
-                document.querySelector(".data-emesso-il").textContent = `0${date.getDate()}/0${date.getMonth()+1}/${date.getFullYear()} - ${date.getHours()}:${date.getMinutes()}`
-            }
-            else if(date.getMinutes() < 10 && date.getHours() >= 10){
-                document.querySelector(".under-animation-attivato-il").textContent = `0${date.getDate()}/0${date.getMonth()+1}/${date.getFullYear()} - ${date.getHours()}:0${date.getMinutes()}`
-                document.querySelector(".data-emesso-il").textContent = `0${date.getDate()}/0${date.getMonth()+1}/${date.getFullYear()} - ${date.getHours()}:0${date.getMinutes()}`
-            }
-            else if(date.getMinutes() >= 10 && date.getHours() < 10){
-                document.querySelector(".under-animation-attivato-il").textContent = `0${date.getDate()}/0${date.getMonth()+1}/${date.getFullYear()} - 0${date.getHours()}:${date.getMinutes()}`
-                document.querySelector(".data-emesso-il").textContent = `0${date.getDate()}/0${date.getMonth()+1}/${date.getFullYear()} - 0${date.getHours()}:${date.getMinutes()}`
-            }
-            else {
-                document.querySelector(".under-animation-attivato-il").textContent = `0${date.getDate()}/0${date.getMonth()+1}/${date.getFullYear()} - 0${date.getHours()}:0${date.getMinutes()}`
-                document.querySelector(".data-emesso-il").textContent = `0${date.getDate()}/0${date.getMonth()+1}/${date.getFullYear()} - 0${date.getHours()}:0${date.getMinutes()}`
-            }
-        }
-    }
+    // Toggle visibilità e classi al clic sulla freccia
+    arrow.addEventListener('click', () => {
+        ticket.classList.toggle("close");
+        bottom.classList.toggle("hidden");
+        arrow.classList.toggle("close");
+    });
 
-    var countDownDate = new Date(date.getTime() + 29*60000);
-    var width = 100
+    // Funzione per formattare un numero con zero iniziale se < 10
+    const pad = n => String(n).padStart(2, '0');
 
-    setInterval(function() {
-        var now = new Date().getTime();
+    // Imposta la data e ora di attivazione
+    const now = new Date();
+    const day = pad(now.getDate());
+    const month = pad(now.getMonth() + 1);
+    const year = now.getFullYear();
+    const hours = pad(now.getHours());
+    const minutes = pad(now.getMinutes());
 
-        var distance = countDownDate - now;
+    const dateTime = `${day}/${month}/${year} - ${hours}:${minutes}`;
 
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    document.querySelector(".under-animation-attivato-il").textContent = dateTime;
+    document.querySelector(".data-emesso-il").textContent = dateTime;
 
-        document.querySelector(".time-remaining").textContent = "00" + ":"
-            + minutes + ":" + seconds;
-
-        if (distance < 0) {
-            clearInterval(x);
-            document.querySelector(".time-remaining").textContent = " EXPIRED ";
-        }
-
-        width -= 0.08
-        document.querySelector(".inner-progress-bar").style.width = `${width}%`;
+    // Orologio in tempo reale (HH:MM:SS)
+    setInterval(() => {
+        const current = new Date();
+        const h = pad(current.getHours());
+        const m = pad(current.getMinutes());
+        const s = pad(current.getSeconds());
+        document.querySelector(".time-remaining").textContent = `${h}:${m}:${s}`;
     }, 1000);
-
-})
+});
