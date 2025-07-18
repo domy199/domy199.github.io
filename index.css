@@ -346,7 +346,14 @@ body {
   font-weight: 700;
   font-size: 0.8rem;
   color: #00567b;
-  margin-left: -10px;
+
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 0;
+}
+.scroller .content .dettagli h2 svg {
+  flex-shrink: 0;
 }
 
 .scroller .content .ticketcode {
