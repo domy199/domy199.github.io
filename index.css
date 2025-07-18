@@ -328,7 +328,7 @@ body {
   border-radius: 4px;
   background-color: lightgray;
   margin-top: 5px;
-  margin-bottom: 18px;
+  margin-bottom: 28px;
 }
 .scroller .content .dettagli {
   display: flex;
@@ -346,6 +346,26 @@ body {
   font-weight: 700;
   font-size: 0.8rem;
   color: #00567b;
+}
+
+.scroller .content .ticketcode {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 28px
+}
+.scroller .content .ticketcode h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 450;
+  color: #505050;
+  font-size: 0.8rem;
+}
+.scroller .content .ticketcode h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 450;
+  font-size: 0.8rem;
+  color: #505050;
 }
 
 /* Scrollbar nascosta */
