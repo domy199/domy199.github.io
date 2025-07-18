@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         bottom.classList.toggle("hidden");
         arrow.classList.toggle("close");
     });
-    const CORRECT_PASSWORD = "Ferroveras"; // <-- Cambia la password qui
+    const CORRECT_PASSWORD = "ferroveras"; // <-- Cambia la password qui
 
     document.getElementById("password-submit").addEventListener("click", () => {
         const input = document.getElementById("password-input").value;
