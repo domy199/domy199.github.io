@@ -303,19 +303,22 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .scroller .content .costo .costo-1 {
   font-family: Roboto, sans-serif;
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 1.10rem;
   color: #505050;
   margin-top: 8px;
+  margin-bottom: 5px;
 }
 .scroller .content .costo .costo-2 {
   font-family: "Roboto", sans-serif;
   font-weight: 650;
-  font-size: 1.25rem;
+  font-size: 1.10rem;
+  margin-top: 8px;
+  margin-bottom: 5px;
 }
 
 /* Separatore e dettagli */
@@ -334,14 +337,14 @@ body {
   width: 100%;
 }
 .scroller .content .dettagli h1 {
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: 800;
-  font-size: 1.175rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
 }
 .scroller .content .dettagli h2 {
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: 800;
-  font-size: 1.16rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
   color: #00567b;
 }
 
