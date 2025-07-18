@@ -1,6 +1,28 @@
 <!doctype html>
 <html lang="it">
 <head>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const password = "ferroveras"; // Cambia con la tua password
+
+        let tentativi = 3;
+        let accesso = false;
+
+        while (tentativi > 0 && !accesso) {
+            const input = prompt("Inserisci la password per accedere alla pagina:");
+            if (input === password) {
+                accesso = true;
+            } else {
+                tentativi--;
+                alert(`Password errata. Tentativi rimasti: ${tentativi}`);
+            }
+        }
+
+        if (!accesso) {
+            document.body.innerHTML = "<h1>Accesso negato</h1>";
+        }
+        });
+    </script>
     <meta name="format-detection" content="telephone=no">
     <meta charset="UTF-8">
     <meta name="theme-color" content="#358551"/>
