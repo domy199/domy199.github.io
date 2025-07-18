@@ -328,7 +328,7 @@ body {
   border-radius: 4px;
   background-color: lightgray;
   margin-top: 5px;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 }
 .scroller .content .dettagli {
   display: flex;
@@ -364,7 +364,8 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin-top: 28px
+  margin-top: 28px;
+  margin-bottom: 18px;
 }
 .scroller .content .ticketcode h1 {
   font-family: "Roboto", sans-serif;
