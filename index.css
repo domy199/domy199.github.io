@@ -335,7 +335,10 @@ body {
   align-items: center;
   width: 100%;
 }
-
+.scroller .content .dettagli .leggi-tutto {
+  display: flex;
+  align-items: center;
+}
 .scroller .content .dettagli h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
