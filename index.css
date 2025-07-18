@@ -232,16 +232,21 @@ body {
 
 /* Animazione orizzontale */
 .scroller .content .animation {
-  display: flex;
-  align-items: center;
-  width: 100%;
   overflow: hidden;
+  white-space: nowrap;
 }
+
 .scroller .content .animation .inner {
-  display: flex;
-  width: 100%;
-  flex-wrap: nowrap;
-  animation: animation 8s linear infinite;
+  display: inline-flex;
+  animation: scroll-left 16s linear infinite;
+}
+
+.scroller .content .animation .inner img {
+  height: 80px;
+  width: auto;
+  flex-shrink: 0;
+  margin-right: 6px;
+  object-fit: contain;
 }
 .scroller .content .animation .inner .img1,
 .scroller .content .animation .inner .img3,
@@ -386,7 +391,10 @@ body {
 }
 
 /* Keyframes */
-@keyframes animation {
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
   100% {
     transform: translateX(-500%);
   }
