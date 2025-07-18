@@ -246,10 +246,17 @@ body {
 .scroller .content .animation .inner .img1,
 .scroller .content .animation .inner .img3,
 .scroller .content .animation .inner .img5,
+.scroller .content .animation .inner .img8,
+.scroller .content .animation .inner .img10,
+.scroller .content .animation .inner .img12,
+.scroller .content .animation .inner .img14,
 .scroller .content .animation .inner .img7 {
   width: 100%;
 }
 .scroller .content .animation .inner .img2,
+.scroller .content .animation .inner .img9,
+.scroller .content .animation .inner .img11,
+.scroller .content .animation .inner .img13,
 .scroller .content .animation .inner .img4,
 .scroller .content .animation .inner .img6 {
   width: 100%;
@@ -388,6 +395,6 @@ body {
 /* Keyframes */
 @keyframes animation {
   100% {
-    transform: translateX(-500%);
+    transform: translateX(-1000%);
   }
 }
