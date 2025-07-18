@@ -346,6 +346,7 @@ body {
   font-weight: 700;
   font-size: 0.8rem;
   color: #00567b;
+  margin-left: -10px;
 }
 
 .scroller .content .ticketcode {
