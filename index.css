@@ -351,8 +351,8 @@ body {
   font-weight: 700;
   font-size: 0.8rem;
   color: #00567b;
-  margin-left: -109px;
-  margin-right: 8px; /* 👈 spazio tra h2 e svg */
+  margin-left: -10px;
+  margin-right: 5px; /* 👈 spazio tra h2 e svg */
 }
 
 .scroller .content .dettagli svg {
