@@ -306,16 +306,16 @@ body {
   margin-top: 20px;
 }
 .scroller .content .costo .costo-1 {
-  font-family: Helvetica, sans-serif;
+  font-family: Roboto, sans-serif;
   font-weight: 500;
-  font-size: 1.45rem;
-  color: #333333;
+  font-size: 1.25rem;
+  color: #505050;
   margin-top: 8px;
 }
 .scroller .content .costo .costo-2 {
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: 800;
-  font-size: 1.45rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 650;
+  font-size: 1.25rem;
 }
 
 /* Separatore e dettagli */
