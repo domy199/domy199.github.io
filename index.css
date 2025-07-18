@@ -271,31 +271,32 @@ body {
 }
 .scroller .content .under-animation h1 {
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  font-weight: 450;
   font-size: 0.85rem;
   color: white;
   margin-left: 10px;
 }
 .under-animation h1:nth-child(2) {
  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  font-weight: 450;
   font-size: 0.85rem;
   color: white;
   margin-top: 5px;
-  margin-left: 10px;
+  margin-left: 8px;
 }
 /* Data e costo */
 .scroller .content .emesso-il {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: #505050;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 .scroller .content .data-emesso-il {
   font-family: "Roboto", sans-serif;
   font-weight: 800;
-  font-size: 0.85rem;
+  margin-top: 2px;
+  font-size: 0.8rem;
 }
 .scroller .content .costo {
   display: flex;
