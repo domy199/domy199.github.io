@@ -34,8 +34,8 @@ document.addEventListener('DOMContentLoaded', () => {
     updateClock();
     setInterval(updateClock, 1000);
 
-    // COUNTDOWN "2 h 10 min" → aggiornato ogni minuto
-    const endTime = new Date(now.getTime() + 29 * 60 * 1000); // 29 minuti da ora
+    // COUNTDOWN 2h 10min
+    const endTime = new Date(now.getTime() + 2 * 60 * 60 * 1000 + 10 * 60 * 1000);
 
     const updateRemaining = () => {
         const current = new Date();
@@ -53,7 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector(".tempo-restante").textContent = `${remainingHours} h ${remainingMinutes} min`;
     };
 
-    // Aggiorna subito + ogni 30 secondi
     updateRemaining();
-    setInterval(updateRemaining, 30000); // ogni 30 secondi (basta per i minuti)
+    setInterval(updateRemaining, 30000); // aggiorna ogni 30 secondi
 });
