@@ -94,7 +94,7 @@ body {
   height: 80px;
 }
 
-/*   – Top sezione */
+/* – Top sezione */
 .scroller .content .ticket .top {
   display: flex;
   justify-content: space-between;
@@ -127,10 +127,9 @@ body {
 }
 .scroller .content .ticket .top svg.close {
   transform: rotate(270deg);
-  
 }
 
-/*   – Bottom sezione */
+/* – Bottom sezione */
 .scroller .content .ticket .bottom {
   display: flex;
   flex-direction: column;
@@ -141,7 +140,7 @@ body {
   display: none;
 }
 
-/*     • QR code */
+/* QR code */
 .scroller .content .ticket .bottom .qrcode {
   width: 95%;
   margin: 15px auto;
@@ -151,7 +150,7 @@ body {
   margin-top: -5%;
 }
 
-/*     • Label ingrandisci */
+/* Label ingrandisci */
 .scroller .content .ticket .bottom .zoom-qrcode {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
@@ -161,20 +160,18 @@ body {
   color: #00567b;
 }
 
-/*     • Timer, progress e lock */
+/* Timer, progress e lock */
 .scroller .content .ticket .bottom .time {
   display: flex;
   align-items: center;
   justify-content: left;
   width: 100%;
   height: 45px;
-
-  
 }
 .scroller .content .ticket .bottom .time svg {
   margin-left: -10px;
-  width: 30px;     /* 🔽 Riduci la dimensione del clock */
-  height: 30px;    /* 🔽 Altezza proporzionata */
+  width: 30px;
+  height: 30px;
 }
 .scroller .content .ticket .bottom .time .time-remaining {
   font-family: "Roboto", sans-serif;
@@ -194,12 +191,11 @@ body {
   background: #dddddd;
   transform: translateX(15px);
   box-sizing: border-box;
-  overflow: hidden; /* Previene sforamenti visivi */
+  overflow: hidden;
 }
-
 .scroller .content .ticket .bottom .time .progress-bar div {
   width: 100%;
-  height: 100%; /* Meglio di 17px, per seguire il parent */
+  height: 100%;
   background-color: #00567b;
   border-radius: 20px;
   box-sizing: border-box;
@@ -239,22 +235,30 @@ body {
 }
 .scroller .content .animation .inner {
   display: flex;
-  width: 100%;
   flex-wrap: nowrap;
-  animation: animation 30s linear infinite;
+  width: fit-content;
+  animation: animation 16s linear infinite;
 }
-.scroller .content .animation .inner .img1,
-.scroller .content .animation .inner .img3,
-.scroller .content .animation .inner .img5,
-.scroller .content .animation .inner .img7 {
-  width: 100%;
+.scroller .content .animation .inner img {
+  width: auto;
+  height: 100px;
+  flex-shrink: 0;
 }
 .scroller .content .animation .inner .img2,
 .scroller .content .animation .inner .img4,
 .scroller .content .animation .inner .img6 {
-  width: 100%;
-  transform: scale(-1, 1);
+  transform: scaleX(-1);
   margin-right: -1px;
+}
+
+/* Keyframes modificati per scorrimento continuo */
+@keyframes animation {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 /* Sezione “under-animation” */
@@ -277,13 +281,14 @@ body {
   margin-left: 10px;
 }
 .under-animation h1:nth-child(2) {
- font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 450;
   font-size: 0.85rem;
   color: white;
   margin-top: 5px;
   margin-left: 8px;
 }
+
 /* Data e costo */
 .scroller .content .emesso-il {
   font-family: "Roboto", sans-serif;
@@ -343,22 +348,21 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   font-size: 0.8rem;
-  margin-right: auto; /* 👈 spinge tutto il resto a destra */
+  margin-right: auto;
 }
-
 .scroller .content .dettagli h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 0.8rem;
   color: #00567b;
   margin-left: -8px;
-  margin-right: 5px; /* 👈 spazio tra h2 e svg */
+  margin-right: 5px;
 }
-
 .scroller .content .dettagli svg {
   flex-shrink: 0;
 }
 
+/* Codice biglietto */
 .scroller .content .ticketcode {
   display: flex;
   align-items: center;
@@ -383,11 +387,4 @@ body {
 /* Scrollbar nascosta */
 .scroller::-webkit-scrollbar {
   display: none;
-}
-
-/* Keyframes */
-@keyframes animation {
-  100% {
-    transform: translateX(-500%);
-  }
 }
