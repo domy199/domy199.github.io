@@ -333,22 +333,26 @@ body {
 .scroller .content .dettagli {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   width: 100%;
 }
+
 .scroller .content .dettagli h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   font-size: 0.8rem;
+  margin-right: auto; /* 👈 spinge tutto il resto a destra */
 }
+
 .scroller .content .dettagli h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 0.8rem;
   color: #00567b;
+  margin-right: 8px; /* 👈 spazio tra h2 e svg */
 }
+
 .scroller .content .dettagli svg {
-  margin-left: -50px;
+  flex-shrink: 0;
 }
 
 .scroller .content .ticketcode {
