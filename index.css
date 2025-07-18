@@ -241,7 +241,7 @@ body {
   display: flex;
   width: 100%;
   flex-wrap: nowrap;
-  animation: animation 20s linear infinite;
+  animation: animation 8s linear infinite alternate;
 }
 .scroller .content .animation .inner .img1,
 .scroller .content .animation .inner .img3,
