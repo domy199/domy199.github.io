@@ -395,6 +395,6 @@ body {
 /* Keyframes */
 @keyframes animation {
   100% {
-    transform: translateX(-850%);
+    transform: translateX(-1000%);
   }
 }
