@@ -232,29 +232,29 @@ body {
 
 /* Animazione orizzontale */
 .scroller .content .animation {
+  display: flex;
+  align-items: center;
+  width: 100%;
   overflow: hidden;
-  white-space: nowrap;
 }
-
 .scroller .content .animation .inner {
-  display: inline-flex;
-  animation: scroll-left 16s linear infinite;
-}
-
-.scroller .content .animation .inner img {
-  height: 80px;
-  width: auto;
-  flex-shrink: 0;
-  margin-right: 6px;
-  object-fit: contain;
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  animation: animation 8s linear infinite;
 }
 .scroller .content .animation .inner .img1,
 .scroller .content .animation .inner .img3,
 .scroller .content .animation .inner .img5,
-.scroller .content .animation .inner .img7,
+.scroller .content .animation .inner .img7 {
+  width: 100%;
+}
 .scroller .content .animation .inner .img2,
 .scroller .content .animation .inner .img4,
 .scroller .content .animation .inner .img6 {
+  width: 100%;
+  transform: scale(-1, 1);
+  margin-right: -1px;
 }
 
 /* Sezione “under-animation” */
@@ -386,11 +386,8 @@ body {
 }
 
 /* Keyframes */
-@keyframes scroll-left {
-  0% {
-    transform: translateX(0);
-  }
+@keyframes animation {
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-500%);
   }
 }
