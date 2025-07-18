@@ -1,28 +1,6 @@
 <!doctype html>
 <html lang="it">
 <head>
-    <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const password = "ferroveras"; // Cambia con la tua password
-
-        let tentativi = 3;
-        let accesso = false;
-
-        while (tentativi > 0 && !accesso) {
-            const input = prompt("Inserisci la password per accedere alla pagina:");
-            if (input === password) {
-                accesso = true;
-            } else {
-                tentativi--;
-                alert(`Password errata. Tentativi rimasti: ${tentativi}`);
-            }
-        }
-
-        if (!accesso) {
-            document.body.innerHTML = "<h1>Accesso negato</h1>";
-        }
-        });
-    </script>
     <meta name="format-detection" content="telephone=no">
     <meta charset="UTF-8">
     <meta name="theme-color" content="#358551"/>
@@ -43,6 +21,12 @@
     <title>Index</title>
 </head>
 <body>
+    <div id="password-screen" style="position:fixed;top:0;left:0;width:100%;height:100%;background:white;z-index:9999;display:flex;flex-direction:column;justify-content:center;align-items:center;">
+    <h2>Inserisci la password</h2>
+    <input type="password" id="password-input" placeholder="Password" style="padding:10px;font-size:16px;">
+    <button id="password-submit" style="margin-top:10px;padding:10px 20px;font-size:16px;">Accedi</button>
+    <p id="password-error" style="color:red;margin-top:10px;display:none;">Password errata</p>
+    </div>
 <div class="topbar">
     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="m14 7l-5 5l5 5"/></svg>
     <h1 class="ticket-attivo">Ticket attivo</h1>
