@@ -276,18 +276,19 @@ body {
   color: white;
   margin-left: 10px;
 }
+ 
 /* Data e costo */
 .scroller .content .emesso-il {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 0.85rem;
-  color: white;
+  color: #505050;
   margin-top: 16px;
 }
 .scroller .content .data-emesso-il {
   font-family: "Roboto", sans-serif;
   font-weight: 800;
-  font-size: 1.05rem;
+  font-size: 0.85rem;
 }
 .scroller .content .costo {
   display: flex;
